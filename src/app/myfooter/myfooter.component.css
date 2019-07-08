@@ -1,0 +1,7 @@
+.footer div{
+    width: 48%;
+    float: left;
+    background-color: black;
+    color: aliceblue;
+    padding: 50px;
+}

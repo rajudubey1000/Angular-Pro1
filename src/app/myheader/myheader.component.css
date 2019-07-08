@@ -1,0 +1,18 @@
+table tr td{
+    background-color: darkcyan;
+    margin: 10px;
+    padding: 10px;
+    border: white 5px solid;
+    text-align: center;
+}
+
+table tr td a{
+    width: 100%;
+    color: aliceblue;
+}
+
+table tr td:hover{
+    background-color: deepskyblue;
+    font-size: larger;
+    color: black;
+}

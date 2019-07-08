@@ -1,0 +1,39 @@
+body
+{
+	background-color: ;
+	
+	
+}
+
+table
+{
+	width: 500px;
+	min-height: 20px;
+	padding: 15px;
+	
+	border-radius: 25px 25px 25px 25px;
+	background-color: ;
+	margin: auto;
+	
+}
+
+/*.div1
+{
+	margin-top: 5px;
+	margin-bottom: 5px;
+	margin-left: 10px;
+}*/
+
+.di1
+{
+	margin: 10px 0px 10px 15px;
+	padding: 10px;
+	background-color:;
+	/*text-decoration: underline;*/
+}
+
+tr:hover{
+	background-color: rgba(227, 255, 71, 0.89);
+}
+
+
