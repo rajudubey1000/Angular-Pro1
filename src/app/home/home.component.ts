@@ -8,25 +8,50 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   name:string="";
-  marks:number;
-  address:string="";
+  email:string;
+  password:string="";
+  confirmpassword: string="";
+  message: string="";
 
   constructor() {
    }
 
   ngOnInit() {
 
-    this.name="";
-    this.address="";
-    this.marks= 1;
-
-    //alert(this.name + this.marks);
   }
 
 
-  show()
+  check()
   {
-    alert(this.address);
+    this.message="";
+    if(this.name=="")
+    {
+      this.message="name is blank";
+    }else if(this.email=="")
+    {
+      this.message="email is blank";
+    }else if(this.password=="")
+    {
+      this.message="password is blank";
+    }else if(this.confirmpassword=="")
+    {
+      this.message="confirm password is blank";
+    }else if(this.password != this.confirmpassword)
+    {
+      this.message="password and confirm password is not match";
+    }else
+    {
+      this.message="checking successfully. Everything correct!!!";
+    }
+  }
+
+
+  reset()
+  {
+    this.name="";
+    this.email="";
+    this.password="";
+    this.confirmpassword="";
   }
 
 }

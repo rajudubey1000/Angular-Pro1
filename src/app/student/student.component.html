@@ -1,5 +1,18 @@
-<p>student works!</p>
-<b>{{name}} {{address}} {{marks}}</b>
-<div>{{name}}</div>
-<div>{{address}}</div>
-<div>{{marks}}</div>
+<p>home works!</p>
+<div class="row">
+    <div class="col-12">
+            <strong>Name: </strong><input  [(ngModel)]="name" required>
+    </div>
+    <div class="col-12">
+            <input type="button" class="btn-success" (click)="check()" value="Check" />
+            <input type="button" class="btn-success" (click)="reset()" value="Reset" />
+    </div>
+    <div class="col-12">
+        <b>{{message}}</b>
+    </div>
+    <ul>
+        <li class="col-12" *ngFor="let student of students">
+            {{student}}
+        </li>
+    </ul>
+</div>

@@ -1,11 +1,22 @@
 <p>home works!</p>
-<div>{{name}}</div>
-<div>{{address}}</div>
-<div>{{marks}}</div>
-
-<input  [(ngModel)]="address" required><br><br>
-<input [(ngModel)]="marks" required><br><br>
-<input [(ngModel)]="name" required>
-<input type="button" (click)="show()" value="Show" /><br><br>
-<b>{{name}} {{address}} {{marks}}</b>
-
+<div class="row">
+    <div class="col-12">
+            <strong>Name: </strong><input  [(ngModel)]="name" required>
+    </div>
+    <div class="col-12">
+            <strong>Email: </strong><input [(ngModel)]="email" required>
+    </div>
+    <div class="col-12">
+            <strong>Password: </strong><input [(ngModel)]="password" required>
+    </div>
+    <div class="col-12">
+            <strong>Confirm Password: </strong><input [(ngModel)]="confirmpassword" required>
+    </div>
+    <div class="col-12">
+            <input type="button" class="btn-success" (click)="check()" value="Check" />
+            <input type="button" class="btn-success" (click)="reset()" value="Reset" />
+    </div>
+    <div class="col-12">
+        <b>{{message}}</b>
+    </div>
+</div>
