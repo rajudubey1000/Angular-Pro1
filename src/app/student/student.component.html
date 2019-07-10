@@ -1,7 +1,7 @@
 <p>home works!</p>
 <div class="row">
     <div class="col-12">
-            <strong>Name: </strong><input  [(ngModel)]="name" required>
+            <strong>Name: </strong><input  [(ngModel)]="name">
     </div>
     <div class="col-12">
             <input type="button" class="btn-success" (click)="check()" value="Check" />
@@ -10,9 +10,9 @@
     <div class="col-12">
         <b>{{message}}</b>
     </div>
-    <ul>
+    <ol>
         <li class="col-12" *ngFor="let student of students">
             {{student}}
         </li>
-    </ul>
+    </ol>
 </div>

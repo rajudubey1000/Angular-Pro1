@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudentComponent implements OnInit {
 
-  students:any[]=["fdsa", "fdsa"];
+  students:any[]=[ ];
   name:string="";
 
   message: string="";

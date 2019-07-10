@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   name:string="";
-  email:string;
+  email:string="";
   password:string="";
   confirmpassword: string="";
   message: string="";
