@@ -1,17 +1,25 @@
 <p>home works!</p>
 <div class="row">
+   
+    
+        <div class="col-12">
+                <strong>UserName: </strong><input  [(ngModel)]="name">
+        </div>
+    
+    
+        <div class="col-12">
+            <strong>Name: </strong><input  [(ngModel)]="nam">
+        </div>
+    
     <div class="col-12">
-            <strong>Name: </strong><input  [(ngModel)]="name">
-    </div>
-    <div class="col-12">
-            <input type="button" class="btn-success" (click)="check()" value="Check" />
-            <input type="button" class="btn-success" (click)="reset()" value="Reset" />
+            <input type="button" class="btn-success" (click)="check()" value="Show User Name" />
+            <input type="button" class="btn-success" (click)="reset()" value="Show Name" />
     </div>
     <div class="col-12">
         <b>{{message}}</b>
     </div>
     <ol>
-        <li class="col-12" *ngFor="let student of students">
+        <li class="col-12" *ngFor="let student of names">
             {{student}}
         </li>
     </ol>

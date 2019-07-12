@@ -7,8 +7,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class StudentComponent implements OnInit {
 
-  students:any[]=[ ];
+  products:any[]=[];
+  students:any[]=[];
   name:string="";
+  nam:string="";
+
+  isActive:boolean=false;
 
   message: string="";
 
@@ -19,17 +23,28 @@ export class StudentComponent implements OnInit {
 
   }
 
+  showName()
+  {
+    this.isActive=false;
+  }
+
+  showUserName()
+  {
+    this.isActive=true;
+  }
+
 
   check()
   {
     this.message="";
     if(this.name=="")
     {
-      this.message="name is blank";
-    }else
+
+    }else if(this.nam=="")
     {
-      this.students.push(this.name);
-      this.message="checking successfully. Everything correct!!!";
+     
+    }else if(this.name + this.nam){
+      this.message="";
     }
   }
 
@@ -40,3 +55,4 @@ export class StudentComponent implements OnInit {
   }
 
 }
+
