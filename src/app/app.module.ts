@@ -12,6 +12,8 @@ import { SettingComponent } from './setting/setting.component';
 import { TeacherComponent } from './teacher/teacher.component';
 import { StudentComponent } from './student/student.component';
 import { HomeComponent } from './home/home.component';
+import { TestdDirective } from './testd.directive';
+import { HeadingHighlightDirective } from './heading-highlight.directive';
 
 
 @NgModule({
@@ -24,7 +26,9 @@ import { HomeComponent } from './home/home.component';
     SettingComponent,
     TeacherComponent,
     StudentComponent,
-    HomeComponent
+    HomeComponent,
+    TestdDirective,
+    HeadingHighlightDirective
   ],
   imports: [
     BrowserModule,

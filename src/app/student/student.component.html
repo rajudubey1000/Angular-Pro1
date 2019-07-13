@@ -1,25 +1,27 @@
 <p>home works!</p>
 <div class="row">
    
-    
-        <div class="col-12">
+    <div appTestd class="col-12">
+        hello
+    </div>
+        <div  class="col-12" appHeadingHighlight>
                 <strong>UserName: </strong><input  [(ngModel)]="name">
         </div>
     
     
         <div class="col-12">
-            <strong>Name: </strong><input  [(ngModel)]="nam">
+            <strong appTestd [displayTxt]="'evening'">Name: </strong><input  [(ngModel)]="name">
         </div>
     
     <div class="col-12">
-            <input type="button" class="btn-success" (click)="check()" value="Show User Name" />
+            <input appHeadingHighlight type="button" class="btn-success" (click)="check()" value="Show User Name" />
             <input type="button" class="btn-success" (click)="reset()" value="Show Name" />
     </div>
     <div class="col-12">
         <b>{{message}}</b>
     </div>
     <ol>
-        <li class="col-12" *ngFor="let student of names">
+        <li class="col-12" *ngFor="let student of names" appTestd>
             {{student}}
         </li>
     </ol>
