@@ -14,6 +14,7 @@ import { StudentComponent } from './student/student.component';
 import { HomeComponent } from './home/home.component';
 import { TestdDirective } from './testd.directive';
 import { HeadingHighlightDirective } from './heading-highlight.directive';
+import { CustomSubmitDirective } from './custom-submit.directive';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { HeadingHighlightDirective } from './heading-highlight.directive';
     StudentComponent,
     HomeComponent,
     TestdDirective,
-    HeadingHighlightDirective
+    HeadingHighlightDirective,
+    CustomSubmitDirective
   ],
   imports: [
     BrowserModule,

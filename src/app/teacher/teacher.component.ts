@@ -6,10 +6,17 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./teacher.component.css']
 })
 export class TeacherComponent implements OnInit {
+  message: string = '';
+  name:string = '';
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  SubmitForm(e) {
+    console.log(e);
+    this.message = 'submitted';
   }
 
 }
