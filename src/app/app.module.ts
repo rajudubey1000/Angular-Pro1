@@ -15,6 +15,8 @@ import { HomeComponent } from './home/home.component';
 import { TestdDirective } from './testd.directive';
 import { HeadingHighlightDirective } from './heading-highlight.directive';
 import { CustomSubmitDirective } from './custom-submit.directive';
+import { ImgdivDirective } from './imgdiv.directive';
+import { SqrtcurrPipe } from './sqrtcurr.pipe';
 
 
 @NgModule({
@@ -30,7 +32,9 @@ import { CustomSubmitDirective } from './custom-submit.directive';
     HomeComponent,
     TestdDirective,
     HeadingHighlightDirective,
-    CustomSubmitDirective
+    CustomSubmitDirective,
+    ImgdivDirective,
+    SqrtcurrPipe
   ],
   imports: [
     BrowserModule,
